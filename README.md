@@ -27,6 +27,7 @@ In any document in atom editor, type the snippet word (eg. asis), followed by [T
 1. Ensure all snippets work as intended.
 2. Convert into installable package.
 3. Submit to Atom's Package Manager
+4. [?] Possibly seperate into different .cson files for individual snippets. ( Vote? )
 
 ## Contributing
 
