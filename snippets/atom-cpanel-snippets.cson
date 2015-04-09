@@ -1,0 +1,365 @@
+"*":
+  "cPanel asis":
+    "prefix": "asis"
+    "body": """
+      [asis,${1:Text}]
+    """
+  "cPanel copyright":
+    "prefix": "copyright"
+    "body": "©"
+  "cPanel csscopyright":
+    "prefix": "csscopyright"
+    "body": """
+      /*
+      # ${1:filename}                                                     Copyright(c) 2014 cPanel, Inc.
+      #                                                                                           All rights Reserved.
+      # copyright@cpanel.net                                                           http://cpanel.net
+      # This code is subject to the cPanel license. Unauthorized copying is prohibited
+      */
+    """
+  "cPanel dash":
+    "prefix": "dash"
+    "body": "–"
+  "cPanel dbadge":
+    "prefix": "dbadge"
+    "body": """
+      <span id="badge{$1:ID}"  class="badge">{$2:text}</span>
+    """
+  "cPanel dbtn":
+    "prefix": "dbtn"
+    "body": """
+      <button id="btn${1:Default} type="button"
+        class="btn btn-default"
+        title="[% locale.maketext('${3:tooltip}') %]">
+        [% locale.maketext("${2:Text}") %]
+      </button>
+    """
+  "cPanel deletebtn":
+    "prefix": "deletebtn"
+    "body": """
+      <button type="button" class="btn btn-link">
+        <span class="glyphicon glyphicon-trash"></span>
+        [% locale.maketext("Delete") %]
+      </button>
+    """
+  "cPanel dlabel":
+    "prefix": "dlabel"
+    "body": """
+      <span id="lblDefault{$1:ID}" class="label label-default">{$2:text}</span>
+    """
+  "cPanel doubledash":
+    "prefix": "doubledash"
+    "body": "—"
+  "cPanel doublegreatherthan":
+    "prefix": "doublegreatherthan"
+    "body": "»"
+  "cPanel doublelessthan":
+    "prefix": "doublelessthan"
+    "body": "«"
+  "cPanel dqend":
+    "prefix": "dqend"
+    "body": "”"
+  "cPanel dqstart":
+    "prefix": "dqstart"
+    "body": "“"
+  "cPanel ebadge":
+    "prefix": "ebadge"
+    "body": """
+      <span id="badgeError{$1:ID}" class="badge badge-danger">{$2:text}</span>
+    """
+  "cPanel ecallout":
+    "prefix": "ecallout"
+    "body": """
+      <section id="callout${1:ID}" class="callout callout-danger">
+	${2}
+    """
+  "cPanel editbtn":
+    "prefix": "editbtn"
+    "body": """
+      <button type="button" class="btn btn-link">
+        <span class="glyphicon glyphicon-pencil"></span>
+        [% locale.maketext("Edit") %]
+      </button>
+    """
+  "cPanel elabel":
+    "prefix": "elabel"
+    "body": """
+      <span id="lblDanger{$1:ID}"  class="label label-danger">{$2:text}</span>
+    """
+  "cPanel ellipse":
+    "prefix": "ellipse"
+    "body": "…"
+  "cPanel groupbtn":
+    "prefix": "groupbtn"
+    "body": """
+      <div class="btn-group">
+        <button id="btn${1:id} type="button"
+          class="btn btn-default"
+          title="[% locale.maketext('${3:tooltip}') %]">
+          [% locale.maketext("${2:Text}") %]
+        </button>
+        <button id="btn${4:id} type="button"
+          class="btn btn-default"
+          title="[% locale.maketext('${5:tooltip}') %]">
+          [% locale.maketext("${6:Text}") %]
+        </button>
+      </div>
+    """
+  "cPanel ibadge":
+    "prefix": "ibadge"
+    "body": """
+      <span id="badgeInfo{$1:ID}" class="badge badge-info">{$2:text}</span>
+    """
+  "cPanel icallout":
+    "prefix": "icallout"
+    "body": """
+      <section id="callout${1:ID}" class="callout callout-info">
+      ${2}
+    """
+  "cPanel ilabel":
+    "prefix": "ilabel"
+    "body": """
+      <span id="lblInfo{$1:ID}" class="label label-info">{$2:text}</span>
+    """
+  "cPanel inlinelist":
+    "prefix": "inlinelist"
+    "body": """
+      <ul id="list{$1:ID}" class="list-inline">
+        <li id="listItem{$4:ID}">{$2:text}</li>
+        <li id="listItem{$5:ID}">{$3:text}</li>
+      </ul>
+    """
+  "cPanel jscopyright":
+    "prefix": "jscopyright"
+    "body": """
+      /*
+      # ${1:filename}                                                     Copyright(c) 2014 cPanel, Inc.
+      #                                                                                           All rights Reserved.
+      # copyright@cpanel.net                                                           http://cpanel.net
+      # This code is subject to the cPanel license. Unauthorized copying is prohibited
+      */
+    """
+  "cPanel jsmt":
+    "prefix": "jsmt"
+    "body": """
+      LOCALE.maketext('{$1:text}')
+    """
+  "cPanel jsmturl":
+    "prefix": "jsmturl"
+    "body": """
+      LOCALE.maketext('{$1}[output,url,_1,{$2},title,{$3},_2] today!', { class : "{$4}", id : "{$5}", data-{$6} : "{$7}", target : "{$8}"})
+    """
+  "cPanel lnkbtn":
+    "prefix": "lnkbtn"
+    "body": """
+      <button id="btn${1:ID} type="button"
+        class="btn btn-link"
+        title="[% locale.maketext('${3:tooltip}') %]">
+        [% locale.maketext("${2:Text}") %]
+      </button>
+    """
+  "cPanel mt":
+    "prefix": "mt"
+    "body": """
+      [% locale.maketext("{$1:text}") %]
+    """
+  "cPanel mturl":
+    "prefix": "mturl"
+    "body": """
+      [% locale.maketext('{$1}[output,url,_1,{$2},title,{$3},_2] today!', { class=>"{$4}", id=>"{$5}", data-{$6}=>"{$7}", target =>"{$8}"}) %]
+    """
+  "cPanel ngactionbtn":
+    "prefix": "ngactionbtn"
+    "body": """
+      <button id="btn{$1:ID}"
+          spinner-id="spinner{$2:ID}"
+          action="{$3:Function}">
+        {$4: Text}
+      </button>
+    """
+  "cPanel ngalert":
+    "prefix": "ngalert"
+    "body": """
+      <div cp-alert ng-repeat="{$1:alert} in alerts"
+            ng-model="{$1:alert}" on-close="{$2:closeAlert}($index)">
+          <span ng-bind-html="{$1:alert}.message"></span>
+      </div>
+    """
+  "cPanel ngpg":
+    "prefix": "ngpg"
+    "body": """
+      <pagination id="pager{$1:ID}" direction-links="false" boundary-links="true" total-items="{$2:totalItems}"
+        ng-model="{$3:currentPage}" items-per-page="{$4:pageSize}" ng-change="{$5:pageChange}"
+        first-text="<<" last-text=">>">
+      </pagination>
+    """
+  "cPanel ngpgellipse":
+    "prefix": "ngpgellipse"
+    "body": """
+      <pagination id="pager{$1:ID}" total-items="{$2:totalItems}" ng-model="{$3:currentPage}"
+        max-size="{$4:maxSize}" items-per-page="{$4:pageSize}" ng-change="{$5:pageChange}"
+        boundary-links="true" rotate="false" num-pages="{$5:numPages}"
+        previous-text="<" next-text=">" first-text="<<" last-text=">>">
+      </pagination>
+    """
+  "cPanel ngpglimited":
+    "prefix": "ngpglimited"
+    "body": """
+      <pagination id="pager{$1:ID}" total-items="{$2:totalItems}" ng-model="{$3:currentPage}" max-size="{$4:maxSize}"
+        boundary-links="true" items-per-page="{$4:pageSize}" ng-change="{$5:pageChange}"
+        previous-text="<" next-text=">" first-text="<<" last-text=">>">
+      </pagination>
+    """
+  "cPanel outputabbr":
+    "prefix": "outputabbr"
+    "body": """
+      [output,abbr,${1:Abbr.},${2:Abbreviation}]
+    """
+  "cPanel outputacronym":
+    "prefix": "outputacronym"
+    "body": """
+      [output,acronym,${1:Acronym},${2:Acronym}]
+    """
+  "cPanel outputamp":
+    "prefix": "outputamp"
+    "body": """
+      [output,amp]
+    """
+  "cPanel outputapos":
+    "prefix": "outputapos"
+    "body": """
+      [output,apos]
+    """
+  "cPanel outputblock":
+    "prefix": "outputblock"
+    "body": """
+      [output,block,${1:text},title,${2:title}]
+    """
+  "cPanel outputgreaterthan":
+    "prefix": "outputgreaterthan"
+    "body": """
+      [output,gt]
+    """
+  "cPanel outputimg":
+    "prefix": "outputimg"
+    "body": """
+      [output,img,_1,${1:text},title,${2:tooltip}]
+    """
+  "cPanel outputinline":
+    "prefix": "outputinline"
+    "body": """
+      [output,inline,${1:text},title,${2:title}]
+    """
+  "cPanel outputlessthan":
+    "prefix": "outputlessthan"
+    "body": """
+      [output,lt]
+    """
+  "cPanel outputlink":
+    "prefix": "outputlink"
+    "body": """
+      [output,url,${1:_1},${2:text},title,${3:tooltip}]
+    """
+  "cPanel outputquoute":
+    "prefix": "outputquoute"
+    "body": """
+      [output,quot]
+    """
+  "cPanel outputstrong":
+    "prefix": "outputstrong"
+    "body": """
+      [output,strong,${1:Text}]
+    """
+  "cPanel outputsub":
+    "prefix": "outputsub"
+    "body": """
+      [output,sub,${1:Text}]
+    """
+  "cPanel outputsup":
+    "prefix": "outputsup"
+    "body": """
+      [output,sup,${1:Text}]
+    """
+  "cPanel pbtn":
+    "prefix": "pbtn"
+    "body": """
+      <button id="btn${1:Primary} type="button"
+        class="btn btn-primary"
+        title="[% locale.maketext('${3:tooltip}') %]">
+        [% locale.maketext("${2:Text}") %]
+      </button>
+    """
+  "cPanel registered":
+    "prefix": "registered"
+    "body": "®"
+  "cPanel sbadge":
+    "prefix": "sbadge"
+    "body": """
+      <span id="badgeSuccess{$1:ID}" class="badge badge-success">{$2:text}</span>
+    """
+  "cPanel slabel":
+    "prefix": "slabel"
+    "body": """
+      <span id="lblSuccess{$1:ID}" class="label label-success">{$2:text}</span>
+    """
+  "cPanel sqend":
+    "prefix": "sqend"
+    "body": "’"
+  "cPanel sqstart":
+    "prefix": "sqstart"
+    "body": "‘"
+  "cPanel tm":
+    "prefix": "tm"
+    "body": "™"
+  "cPanel unstyledlist":
+    "prefix": "unstyledlist"
+    "body": """
+      <ul id="list{$1:ID}" class="list-unstyled">
+        <li id="listItem{$4:ID}">{$2:text}</li>
+        <li id="listItem{$5:ID}">{$3:text}</li>
+      </ul>
+    """
+  "cPanel wbadge":
+    "prefix": "wbadge"
+    "body": """
+      <span id="badgeWarning{$1:ID}" class="badge badge-warning">{$2:text}</span>
+    """
+  "cPanel wcallout":
+    "prefix": "wcallout"
+    "body": """
+      <section id="callout${1:ID}" class="callout callout-warning">
+      ${2}
+      </section>
+    """
+  "cPanel wlabel":
+    "prefix": "wlabel"
+    "body": """
+      <span id="lblWarning{$1:ID}" class="label label-warning">{$2:text}</span>
+    """
+  "cPanel wrapper":
+    "prefix": "wrapper"
+    "body": """
+      [% css_code_block = PROCESS css_block %]
+      [% js_code_block = PROCESS js_block %]
+      [% WRAPPER '_assets/master.html.tt'
+          app_key = '${1:app_key}'
+          page_title = '${2:page_title}'
+          page_stylesheets = []
+          page_scripts = []
+          page_styles = css_code_block
+          page_js = js_code_block
+          include_legacy_stylesheets = 0 # excludes legacy yui stylesheets
+          include_legacy_scripts = 0 # excludes yui utils and x3 optimized scripts
+          include_cjt = 0 # excludes legacy cjt scripts
+      -%]
+      [% END # WRAPPER END %]
+      [% BLOCK css_block %]
+      <style>
+      </style>
+      [% END # css_block END %]
+      [% BLOCK js_block %]
+      <script>
+      </script>
+      [% END # js_block END %]
+    """
+
