@@ -12,7 +12,7 @@ These are the snippets for cPanel's Style Guide ( http://styleguide.cpanel.net/ 
 
 	cp $cpanel-atom-snippets/snippets/atom-cpanel-snippets.cson ~/.atom/packages/
 
-3. Restart Atom Editor or ctrl+alt+r (Reload Windows)
+3. Restart Atom Editor or [Ctrl] + [Alt] + [R] (Reload Windows)
 
 ## Usage
 
